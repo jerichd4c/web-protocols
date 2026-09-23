@@ -56,19 +56,19 @@ A raw TCP socket server that exposes a small set of classes (`Calculator`, `Text
 The client sends a single pipe-delimited line: `ClassName|methodName|types|values`, and the server replies with the plain result.
 
 ```
-Selecciona una clase
-1. Calculadora   2. Modificador de texto   3. Conversor   4. Salir
-Opción: 1
+Select a class
+1. Calculator   2. Text Modifier   3. Currency Converter   4. Exit
+Choice: 1
 
-Selecciona una operación
-1. Sumar   2. Restar   3. Dividir   4. Salir
-Opción: 1
-Ingrese primer numero: 1
-Ingrese segundo numero: 2
+Select an operation
+1. Add   2. Subtract   3. Divide   4. Exit
+Choice: 1
+Enter first number: 1
+Enter second number: 2
 
-[CLIENTE] enviando: Calculator|add|int,int|1,2
-[SERVER]  recibiendo: Calculator|add|int,int|1,2
-Resultado: 3
+[CLIENT] sending: Calculator|add|int,int|1,2
+[SERVER] receiving: Calculator|add|int,int|1,2
+Result: 3
 ```
 
 Argument types (`int`, `float`, `string`) are auto-detected client-side from the raw input and sent alongside the values so the server knows how to parse and invoke the method with the right parameter types.

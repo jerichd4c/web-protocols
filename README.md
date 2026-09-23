@@ -2,12 +2,12 @@
 
 <br />
 <div align="center">
-  <img src="https://img.shields.io/badge/Protocolos%20de%20Red-URU-blue?style=for-the-badge" alt="Protocolos de Red" width="320" height="40">
+  <img src="https://img.shields.io/badge/Web%20Protocols-URU-blue?style=for-the-badge" alt="Web Protocols" width="320" height="40">
 
-<h3 align="center">Protocolos de Red - Sebastian Cohen</h3>
+<h3 align="center">Web Protocols - Sebastian Cohen</h3>
 
   <p align="center">
-    Repository for the Network Protocols course at URU. It gathers the final versions of the class exercises and projects built around TCP, UDP, and higher-level protocols on top of them.
+    Repository for the Web Protocols course at URU. It gathers the final versions of the class exercises and projects built around TCP, UDP, and higher-level protocols on top of them.
   </p>
 </div>
 
