@@ -35,7 +35,7 @@
 
 ## About The Repository
 
-This repository brings together the material covered in the **Network Protocols** course. Its purpose is to keep the final, working version of each class exercise and project in one organized place — everything from raw TCP/UDP sockets to a full FTP client and a UDP-based video streaming service.
+This repository brings together the material covered in the **Web Protocols** course. Its purpose is to keep the final, working version of each class exercise and project in one organized place — everything from raw TCP/UDP sockets to a full FTP client and a UDP-based video streaming service.
 
 Each project folder is self-contained and has its own README with setup instructions and implementation details.
 
