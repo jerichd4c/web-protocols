@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo WebSocket en Python</title>
+</head>
+<body>
+    <h2>Comunicacion Cliente - Servidor (WebSocket)</h2>
+    <button id="btnSubmit">Enviar Mensaje al Servidor</button>
+
+    <script>
+        // 1. Start WebSocket connection
+        const socket = new WebSocket('ws://localhost:8000');
+
+        // Event: Trigger when connection is established
+        socket.onopen = () => {
+            console.log("Conexión WebSocket establecida y lista para usarse.");
+        };
+
+        // Event: Trigger when a message is received from the server
+        socket.onmessage = (event) => {
+            // msj 4: Log the message received from the server
+            console.log("msj 4: hola mundo recibido del servidor (Cliente)");
+
+            console.log("Datos del servidor:", JSON.parse(event.data));
+        };
+
+        // Event: Trigger when the button is clicked to send a message to the server
+        socket.onerror = (error) => {
+            console.error("Error en la conexión WebSocket:", error);
+        };
+
+        // On click: Send a message to the server
+        document.getElementById('btnSubmit').addEventListener('click', () => {
+            // Verify tunnel is open before sending
+            if (socket.readyState === WebSocket.OPEN) {
+                // msj 1: Execute before sending the message to the server
+                console.log("msj 1: Enviando mensaje al servidor (Cliente)");
+
+                // Send the message through the WebSocket connection
+                socket.send(JSON.stringify({ message: "Hola Mundo" }));
+            } else {
+                console.error("La conexión WebSocket aun no esta establecida."); 
+            }
+        });
+   </script>
+</body>
+</html>

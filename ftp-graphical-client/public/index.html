@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client FTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <label>Server: <input type="text" id="host" placeholder="192.168.x.x"></label>
+        <label>Port: <input type="number" id="port" value="21"></label>
+        <label>User: <input type="text" id="user"></label>
+        <label>Password: <input type="password" id="password"></label>
+        <div class="button-group">
+            <button id="connectBtn">Connect</button>
+            <button id="disconnectBtn" disabled>Disconnect</button>
+        </div>
+    </header>
+
+    <div class="logs-container">
+        <textarea id="console" readonly placeholder="Waiting connection..."></textarea>
+    </div>
+
+    <div class="panels-container">
+
+        <div class="panel">
+            <h3>Local Site:</h3>
+            <div class="file-list" id="localList">
+                </div>
+            <button id="summitBtn" disabled>Upload File</button>
+            <button id="editLocalBtn" disabled>Edit local file</button>
+        </div>
+
+        <div class="panel">
+            <h3>Remote Site:</h3>
+            <div class="file-list" id="remoteList">
+                </div>
+            <div class="remote-action">
+                <button id="downloadBtn" disabled>Download File</button>
+                <button id="editRemoteBtn" disabled>Edit remote File</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="editorSection">
+        <h3>Editing: <span id="editingFileName"></span></h3>
+        <textarea id="fileEditor"></textarea>
+        <button id="saveEditorBtn">Save Changes</button>
+        <button id="closeEditorBtn">Close Editor</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

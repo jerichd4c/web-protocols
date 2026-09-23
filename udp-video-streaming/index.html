@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de video con UDP</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Reproductor UDP</h1>
+    <div class ="container">
+        <div class="list-box">
+            <h3>Videos disponibles</h3>
+            <ul id="videoList"></ul>
+        </div>
+        <div style="width: 70%;">
+            <h3 id="nowPlaying">Selecciona un video</h3>
+            <video id="player" controls autoplay></video>
+        </div>
+    </div>
+
+    <script>
+        // Load list when starting client
+        fetch('/api/videos')
+            .then(response => response.json())
+            .then(videos => {
+                const list = document.getElementById('videoList');
+                videos.forEach(vid => {
+                    const li = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.innerText = vid; 
+                    link.onclick = () => {
+                        document.getElementById('player').src = `/video/${encodeURIComponent(vid)}`;
+                        document.getElementById('nowPlaying').innerText = `Reproduciendo: ${vid}`;
+                    };
+                    li.appendChild(link);
+                    list.appendChild(li);
+                });
+            });
+    </script>
+</body>
+</html>
