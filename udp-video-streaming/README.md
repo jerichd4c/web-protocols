@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/jerichd4c/web-protocols-cohen/tree/main/udp-video-streaming">
+  <a href="https://github.com/jerichd4c/web-protocols/tree/main/udp-video-streaming">
     <img src="https://raw.githubusercontent.com/jerichd4c/ReflexJDBC/main/javascript_logo.svg" alt="Logo" width="80" height="80">
   </a>
 </div>
