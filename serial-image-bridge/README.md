@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/jerichd4c/web-protocols-cohen/tree/main/serial-image-bridge">
+  <a href="https://github.com/jerichd4c/web-protocols/tree/main/serial-image-bridge">
     <img src="https://raw.githubusercontent.com/jerichd4c/ReflexJDBC/main/python_logo.svg" alt="Logo" width="80" height="80">
   </a>
 </div>
