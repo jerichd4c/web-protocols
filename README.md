@@ -46,6 +46,7 @@ Each project folder is self-contained and has its own README with setup instruct
 * [![Node.js][Node-badge]][Node-url]
 * [![Java][Java-badge]][Java-url]
 * [![Python][Python-badge]][Python-url]
+* [![C][C-badge]][C-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,7 +58,8 @@ Each project has its own dependencies and run instructions — see its individua
 
 * Node.js and npm
 * A JDK (for the TCP project's Java implementation)
-* Python 3 (for the WebSocket example and the serial image bridge)
+* Python 3 (for the WebSocket example, the serial image bridge, and the UDS project)
+* A C compiler and a Unix-like environment (Linux/WSL) for the UDS project's C implementation
 
 ### Installation
 
@@ -78,6 +80,7 @@ These are the practices and projects currently available in the repository:
 * `tcp-remote-method-execution/`: TCP server that executes methods of server-side classes via reflection, implemented in both Node.js and Java.
 * `udp-video-streaming/`: web video player streamed over raw UDP through an HTTP bridge.
 * `serial-image-bridge/`: desktop app that transmits images to a microcontroller byte-by-byte over serial.
+* `unix-domain-socket-messaging/`: local client/server chat over a Unix Domain Socket, implemented in both C and Python.
 * `websocket-example/`: small in-class WebSocket demo in Python (client/server "hello world").
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -106,6 +109,11 @@ A CustomTkinter desktop app that sends an image to a microcontroller byte-by-byt
 * **Features**: grayscale + downsampling pipeline, serial handshake, live transmission log.
 * **Documentation**: [Project README](serial-image-bridge/README.md)
 
+### [Unix Domain Socket Messaging](unix-domain-socket-messaging/README.md)
+A local client/server chat over a Unix Domain Socket (a filesystem-path pipe instead of an IP/port) — implemented twice, in C and in Python.
+* **Features**: matching wire protocol in both languages, graceful shutdown and cleanup of the socket file on both server implementations.
+* **Documentation**: [Project README](unix-domain-socket-messaging/README.md)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap
@@ -116,7 +124,7 @@ This roadmap summarizes the course progress and can keep growing as new units or
 - [x] Raw UDP sockets and a UDP-backed video streaming service.
 - [x] A full FTP client between two physical machines.
 - [x] Serial communication with a microcontroller (Arduino/ESP32).
-- [ ] Unix Domain Sockets (UDS) client/server for local message passing — in progress.
+- [x] Unix Domain Sockets (UDS) client/server for local message passing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,3 +134,5 @@ This roadmap summarizes the course progress and can keep growing as new units or
 [Java-url]: https://www.java.com/
 [Python-badge]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/
+[C-badge]: https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black
+[C-url]: https://en.wikipedia.org/wiki/C_(programming_language)

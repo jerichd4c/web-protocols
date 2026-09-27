@@ -11,6 +11,11 @@ venv/
 *.class
 out/
 
+# C (compiled binaries from unix-domain-socket-messaging)
+unix-domain-socket-messaging/server
+unix-domain-socket-messaging/client
+*.o
+
 # IDE / OS
 .vscode/
 .idea/
