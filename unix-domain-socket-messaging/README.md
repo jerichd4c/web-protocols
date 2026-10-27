@@ -4,8 +4,8 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/jerichd4c/web-protocols/tree/main/unix-domain-socket-messaging">
-    <img src="https://raw.githubusercontent.com/jerichd4c/ReflexJDBC/main/c_logo.svg" alt="C Logo" width="70" height="70">
-    <img src="https://raw.githubusercontent.com/jerichd4c/ReflexJDBC/main/python_logo.svg" alt="Python Logo" width="70" height="70">
+    <img src="https://raw.githubusercontent.com/jerichd4c/logos/main/c_logo.svg" alt="C Logo" width="70" height="70">
+    <img src="https://raw.githubusercontent.com/jerichd4c/logos/main/python_logo.svg" alt="Python Logo" width="70" height="70">
   </a>
 </div>
 
