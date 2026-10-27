@@ -4,8 +4,8 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/jerichd4c/web-protocols/tree/main/tcp-remote-method-execution">
-    <img src="https://raw.githubusercontent.com/jerichd4c/ReflexJDBC/main/javascript_logo.svg" alt="Node.js Logo" width="70" height="70">
-    <img src="https://raw.githubusercontent.com/jerichd4c/ReflexJDBC/main/java_logo.svg" alt="Java Logo" width="70" height="70">
+    <img src="https://raw.githubusercontent.com/jerichd4c/logos/main/javascript_logo.svg" alt="Node.js Logo" width="70" height="70">
+    <img src="https://raw.githubusercontent.com/jerichd4c/logos/main/java_logo.svg" alt="Java Logo" width="70" height="70">
   </a>
 </div>
 
